@@ -1,12 +1,12 @@
 parse_panorama("bridge", {
   "bridge": {
     "sides": [
-      "/panoramas/ronggui-bridge/images/1.front.jpg",
-      "/panoramas/ronggui-bridge/images/1.right.jpg",
-      "/panoramas/ronggui-bridge/images/1.back.jpg",
-      "/panoramas/ronggui-bridge/images/1.left.jpg",
-      "/panoramas/ronggui-bridge/images/1.top.jpg",
-      "/panoramas/ronggui-bridge/images/1.bottom.jpg"
+      "../../../panoramas/ronggui-bridge/images/1.front.jpg",
+      "../../../panoramas/ronggui-bridge/images/1.right.jpg",
+      "../../../panoramas/ronggui-bridge/images/1.back.jpg",
+      "../../../panoramas/ronggui-bridge/images/1.left.jpg",
+      "../../../panoramas/ronggui-bridge/images/1.top.jpg",
+      "../../../panoramas/ronggui-bridge/images/1.bottom.jpg"
     ],
     "lon": 180,
     "autorotate": 0,
@@ -42,12 +42,12 @@ parse_panorama("bridge", {
   },
   "pier_bottom": {
     "sides": [
-      "/panoramas/ronggui-bridge/images/2.front.jpg",
-      "/panoramas/ronggui-bridge/images/2.right.jpg",
-      "/panoramas/ronggui-bridge/images/2.back.jpg",
-      "/panoramas/ronggui-bridge/images/2.left.jpg",
-      "/panoramas/ronggui-bridge/images/2.top.jpg",
-      "/panoramas/ronggui-bridge/images/2.bottom.jpg"
+      "../../../panoramas/ronggui-bridge/images/2.front.jpg",
+      "../../../panoramas/ronggui-bridge/images/2.right.jpg",
+      "../../../panoramas/ronggui-bridge/images/2.back.jpg",
+      "../../../panoramas/ronggui-bridge/images/2.left.jpg",
+      "../../../panoramas/ronggui-bridge/images/2.top.jpg",
+      "../../../panoramas/ronggui-bridge/images/2.bottom.jpg"
     ],
     "lon": 250,
     "autorotate": 0,
@@ -83,12 +83,12 @@ parse_panorama("bridge", {
   },
   "pier_top": {
     "sides": [
-      "/panoramas/ronggui-bridge/images/3.front.jpg",
-      "/panoramas/ronggui-bridge/images/3.right.jpg",
-      "/panoramas/ronggui-bridge/images/3.back.jpg",
-      "/panoramas/ronggui-bridge/images/3.left.jpg",
-      "/panoramas/ronggui-bridge/images/3.top.jpg",
-      "/panoramas/ronggui-bridge/images/3.bottom.jpg"
+      "../../../panoramas/ronggui-bridge/images/3.front.jpg",
+      "../../../panoramas/ronggui-bridge/images/3.right.jpg",
+      "../../../panoramas/ronggui-bridge/images/3.back.jpg",
+      "../../../panoramas/ronggui-bridge/images/3.left.jpg",
+      "../../../panoramas/ronggui-bridge/images/3.top.jpg",
+      "../../../panoramas/ronggui-bridge/images/3.bottom.jpg"
     ],
     "lon": 120,
     "autorotate": 0,
@@ -124,12 +124,12 @@ parse_panorama("bridge", {
   },
   "outside": {
     "sides": [
-      "/panoramas/ronggui-bridge/images/4.front.jpg",
-      "/panoramas/ronggui-bridge/images/4.right.jpg",
-      "/panoramas/ronggui-bridge/images/4.back.jpg",
-      "/panoramas/ronggui-bridge/images/4.left.jpg",
-      "/panoramas/ronggui-bridge/images/4.top.jpg",
-      "/panoramas/ronggui-bridge/images/4.bottom.jpg"
+      "../../../panoramas/ronggui-bridge/images/4.front.jpg",
+      "../../../panoramas/ronggui-bridge/images/4.right.jpg",
+      "../../../panoramas/ronggui-bridge/images/4.back.jpg",
+      "../../../panoramas/ronggui-bridge/images/4.left.jpg",
+      "../../../panoramas/ronggui-bridge/images/4.top.jpg",
+      "../../../panoramas/ronggui-bridge/images/4.bottom.jpg"
     ],
     "lon": 100,
     "autorotate": 0,
