@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Panorama collection of some places in Ronggui.">
+  <title>Panorama collection of some places in Ronggui</title>
+  <script src="../js/vendor/jquery-1.11.0.min.js"></script>
+  <script src="../js/vendor/leanorama.min.js"></script>
+  <link rel="stylesheet" href="../css/vendor/main.css">
+  <style>
+    .pano-selector {
+      top: 0; bottom: initial; z-index: 999;
+    }
+    #scenes {
+      -webkit-appearance: menulist-button;
+      font-size: 16px;
+      height: 30px;
+      width: 200px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="leanorama-controlbar pano-selector">
+    <div class="leanorama-controlbar-bg"></div>
+    <div class="leanorama-controlbar-controls">
+      <select id="scenes">
+        <option value="restaurant">Restaurant</option>
+        <option value="old-house-1">Old House 1</option>
+        <option value="old-house-2">Old House 2</option>
+        <option value="old-house-3">Old House 3</option>
+        <option value="dock">Dock</option>
+        <option value="waterlock">Waterlock</option>
+        <option value="run-down-house">Run-down house</option>
+      </select>
+    </div>
+  </div>
+  <div id="pano-outer">
+    <div id="pano"></div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
