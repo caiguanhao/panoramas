@@ -1,4 +1,4 @@
-parse_panorama("restaurant", {
+parse_panorama({
   "restaurant": {
     "sides": [
       "images/1.front.jpg",

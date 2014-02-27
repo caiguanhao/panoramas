@@ -1,4 +1,4 @@
-parse_panorama("bridge", {
+parse_panorama({
   "bridge": {
     "sides": [
       "images/1.front.jpg",

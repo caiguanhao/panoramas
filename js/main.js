@@ -1,5 +1,6 @@
-function parse_panorama(_default_scene, scenes) {
-  var default_scene = _default_scene;
+function parse_panorama(scenes) {
+  for (var first_scene in scenes) break;
+  var default_scene = first_scene;
   var scene = window.location.hash.substr(1);
   if (scenes.hasOwnProperty(scene)) {
     default_scene = scene;
@@ -20,7 +21,7 @@ function parse_panorama(_default_scene, scenes) {
   $(window).on("hashchange", function() {
     var scene = window.location.hash.substr(1);
     if (!scenes.hasOwnProperty(scene)) {
-      scene = _default_scene;
+      scene = first_scene;
     }
     $('#pano').trigger('leanoramaRefresh', scenes[scene]);
   });

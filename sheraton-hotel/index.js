@@ -1,4 +1,4 @@
-parse_panorama("outside", {
+parse_panorama({
   "outside": {
     "sides": [
       "images/1.front.jpg",
