@@ -101,9 +101,119 @@ var scenes = {
     "infobox": "<b>Top of a run-down house</b>",
     "touch": true,
     "gyro": false
+  },
+  "bicycle-parking": {
+    "sides": [
+      "images/8.front.jpg",
+      "images/8.right.jpg",
+      "images/8.back.jpg",
+      "images/8.left.jpg",
+      "images/8.top.jpg",
+      "images/8.bottom.jpg"
+    ],
+    "lon": 90,
+    "autorotate": 0,
+    "infobox": "<b>Bicycle parking</b>",
+    "touch": true,
+    "gyro": false
+  },
+  "huaxi-park": {
+    "sides": [
+      "images/9.front.jpg",
+      "images/9.right.jpg",
+      "images/9.back.jpg",
+      "images/9.left.jpg",
+      "images/9.top.jpg",
+      "images/9.bottom.jpg"
+    ],
+    "lon": 90,
+    "autorotate": 0,
+    "infobox": "<b>Huaxi Park Night</b>",
+    "touch": true,
+    "gyro": false
+  },
+  "dongyuan": {
+    "sides": [
+      "images/10.front.jpg",
+      "images/10.right.jpg",
+      "images/10.back.jpg",
+      "images/10.left.jpg",
+      "images/10.top.jpg",
+      "images/10.bottom.jpg"
+    ],
+    "lon": 180,
+    "autorotate": 0,
+    "infobox": "<b>Dongyuan</b>",
+    "touch": true,
+    "gyro": false
+  },
+  "fengyuting": {
+    "sides": [
+      "images/11.front.jpg",
+      "images/11.right.jpg",
+      "images/11.back.jpg",
+      "images/11.left.jpg",
+      "images/11.top.jpg",
+      "images/11.bottom.jpg"
+    ],
+    "lon": 90,
+    "autorotate": 0,
+    "infobox": "<b>Fengyuting</b>",
+    "touch": true,
+    "gyro": false
+  },
+  "qingxiaoge": {
+    "sides": [
+      "images/12.front.jpg",
+      "images/12.right.jpg",
+      "images/12.back.jpg",
+      "images/12.left.jpg",
+      "images/12.top.jpg",
+      "images/12.bottom.jpg"
+    ],
+    "lon": 90,
+    "autorotate": 0,
+    "infobox": "<b>Qingxiaoge</b>",
+    "touch": true,
+    "gyro": false
+  },
+  "library": {
+    "sides": [
+      "images/13.front.jpg",
+      "images/13.right.jpg",
+      "images/13.back.jpg",
+      "images/13.left.jpg",
+      "images/13.top.jpg",
+      "images/13.bottom.jpg"
+    ],
+    "lon": 90,
+    "autorotate": 0,
+    "infobox": "<b>Library Lecture Room</b>",
+    "touch": true,
+    "gyro": false
+  },
+  "Shishan": {
+    "sides": [
+      "images/14.front.jpg",
+      "images/14.right.jpg",
+      "images/14.back.jpg",
+      "images/14.left.jpg",
+      "images/14.top.jpg",
+      "images/14.bottom.jpg"
+    ],
+    "lon": 120,
+    "autorotate": 0,
+    "infobox": "<b>Shishan</b>",
+    "touch": true,
+    "gyro": false
   }
 };
-parse_panorama("restaurant", scenes);
+var default_scene = 'restaurant';
+parse_panorama(default_scene, scenes);
+$.each(scenes, function(name, scene) {
+  $('#scenes').append('<option value="' + name + '">' + scene.infobox.replace(/(<([^>]+)>)/ig, '') + '</option>')
+});
+$('#scenes').val(default_scene);
 $('#scenes').change(function() {
   $('#pano').trigger('leanoramaRefresh', scenes[$(this).val()]);
 });
