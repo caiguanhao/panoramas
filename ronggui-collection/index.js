@@ -192,7 +192,7 @@ var scenes = {
     "touch": true,
     "gyro": false
   },
-  "Shishan": {
+  "shishan": {
     "sides": [
       "images/14.front.jpg",
       "images/14.right.jpg",
@@ -209,11 +209,22 @@ var scenes = {
   }
 };
 var default_scene = 'restaurant';
+var scene = window.location.hash.substr(1);
+if (scenes.hasOwnProperty(scene)) {
+  default_scene = scene;
+}
 parse_panorama(default_scene, scenes);
 $.each(scenes, function(name, scene) {
-  $('#scenes').append('<option value="' + name + '">' + scene.infobox.replace(/(<([^>]+)>)/ig, '') + '</option>')
+  $('#scenes').append('<option value="' + name + '">' +
+    scene.infobox.replace(/(<([^>]+)>)/ig, '') + '</option>');
 });
 $('#scenes').val(default_scene);
 $('#scenes').change(function() {
-  $('#pano').trigger('leanoramaRefresh', scenes[$(this).val()]);
+  window.location.hash = $(this).val();
+});
+$(window).on("hashchange", function() {
+  var scene = window.location.hash.substr(1);
+  if (scenes.hasOwnProperty(scene)) {
+    $('#pano').trigger('leanoramaRefresh', scenes[scene]);
+  }
 });
