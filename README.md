@@ -1,11 +1,15 @@
 PANORAMAS
 =========
 
-To generate or update assets:
+Make sure you have installed uglify-js and less:
+
+    npm -g i uglify-js less
+
+To generate or update css/js files:
 
     make
 
-To serve:
+To serve the web site locally:
 
     make s
 

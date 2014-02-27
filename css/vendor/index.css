@@ -18,3 +18,13 @@ html, body {
   width: 100%;
   height: 100%;
 }
+.pano-selector {
+  top: 0; bottom: initial !important; z-index: 999;
+}
+#scenes {
+  -webkit-appearance: menulist-button;
+  font-size: 16px;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+}

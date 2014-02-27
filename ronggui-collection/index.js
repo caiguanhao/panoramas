@@ -1,4 +1,4 @@
-var scenes = {
+parse_panorama("restaurant", {
   "restaurant": {
     "sides": [
       "images/1.front.jpg",
@@ -206,25 +206,5 @@ var scenes = {
     "infobox": "<b>Shishan</b>",
     "touch": true,
     "gyro": false
-  }
-};
-var default_scene = 'restaurant';
-var scene = window.location.hash.substr(1);
-if (scenes.hasOwnProperty(scene)) {
-  default_scene = scene;
-}
-parse_panorama(default_scene, scenes);
-$.each(scenes, function(name, scene) {
-  $('#scenes').append('<option value="' + name + '">' +
-    scene.infobox.replace(/(<([^>]+)>)/ig, '') + '</option>');
-});
-$('#scenes').val(default_scene);
-$('#scenes').change(function() {
-  window.location.hash = $(this).val();
-});
-$(window).on("hashchange", function() {
-  var scene = window.location.hash.substr(1);
-  if (scenes.hasOwnProperty(scene)) {
-    $('#pano').trigger('leanoramaRefresh', scenes[scene]);
   }
 });

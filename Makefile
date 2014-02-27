@@ -1,6 +1,6 @@
-all: clean uglify less
+all: clean js css
 
-uglify:
+js:
 	cd js/vendor && \
 	uglifyjs \
 	bootstrap-custom.js \
@@ -12,7 +12,7 @@ uglify:
 	../main.js \
 	> leanorama.min.js
 
-less:
+css:
 	cd css/vendor && lessc --clean-css main.less > main.css
 
 clean:
@@ -21,4 +21,4 @@ clean:
 s:
 	python -m SimpleHTTPServer
 
-.PHONY: all uglify less clean
+.PHONY: all js css clean s
