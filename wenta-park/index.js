@@ -374,9 +374,9 @@ $(window).on("hashchange", function() {
   for (var i = 0; i < markers.length; i++) {
     var marker = markers[i];
     if (marker.sceneName === scene) {
-      marker.setIcon('/css/img/green-dot.png');
+      marker.setIcon('../css/img/green-dot.png');
     } else {
-      marker.setIcon('/css/img/red-dot.png');
+      marker.setIcon('../css/img/red-dot.png');
     }
   }
 });
@@ -401,7 +401,7 @@ google.maps.event.addDomListener(window, 'load', function() {
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(coordinates[0], coordinates[1]),
       map: map,
-      icon: default_scene === sceneName ? '/css/img/green-dot.png' : '/css/img/red-dot.png',
+      icon: default_scene === sceneName ? '../css/img/green-dot.png' : '../css/img/red-dot.png',
       title: coordinates[0] + ', ' + coordinates[1]
     });
     marker.sceneName = sceneName;
