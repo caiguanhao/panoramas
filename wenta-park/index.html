@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="Ronggui Wenta Park.">
+  <title>Ronggui Wenta Park.</title>
+  <script src="../js/vendor/jquery-1.11.0.min.js"></script>
+  <script src="../js/vendor/leanorama.min.js"></script>
+  <link rel="stylesheet" href="../css/vendor/main.css">
+  <style>
+    #map-canvas {
+      height: 100%;
+      margin: 0px;
+      padding: 0px
+    }
+    .half-top {
+      height: 33%;
+    }
+    .half-bottom {
+      height: 67%;
+    }
+    #pano {
+      position: absolute;
+    }
+    .leanorama-infobox {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="half-top">
+    <div id="map-canvas"></div>
+  </div>
+  <div class="half-bottom">
+    <div id="pano-outer">
+      <div id="pano"></div>
+    </div>
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
